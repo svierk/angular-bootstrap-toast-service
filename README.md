@@ -8,6 +8,15 @@ Run
 
 - `npm start` for a dev server. Navigate to `http://localhost:4200/`.
 
+## Linter and Prettier
+
+Run
+
+- `npm run lint` to check for _ESLint_ issues
+- `npm run lint:fix` to automatically fix _ESLint_ issues
+- `npm run prettier` to check for _Prettier_ issues
+- `npm run prettier:fix` to automatically fix _Prettier_ issues
+
 ## Unit Tests
 
 Run
@@ -20,4 +29,3 @@ Run
 Run
 
 - `npm run build` to run the production build
-
