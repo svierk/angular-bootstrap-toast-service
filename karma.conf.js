@@ -10,6 +10,7 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
+      require('karma-junit-reporter'),
       require('@angular-devkit/build-angular/plugins/karma'),
     ],
     client: {
@@ -25,11 +26,14 @@ module.exports = function (config) {
       suppressAll: true, // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-bootstrap-toast-service'),
+      dir: require('path').join(__dirname, './coverage'),
       subdir: '.',
-      reporters: [{ type: 'html' }, { type: 'text-summary' }],
+      reporters: [{ type: 'lcov' }, { type: 'text-summary' }, { type: 'cobertura', subdir: './cobertura' }],
     },
-    reporters: ['progress', 'kjhtml'],
+    junitReporter: {
+      outputDir: require('path').join(__dirname, './coverage/junit'), // results will be saved as $outputDir/$browserName.xml
+    },
+    reporters: ['progress', 'kjhtml', 'junit'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
