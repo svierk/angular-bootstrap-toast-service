@@ -1,0 +1,93 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "extends": ["eslint:recommended"],
+      "env": {
+        "es2020": true,
+        "node": true
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "plugins": ["deprecation", "rxjs"],
+      "parserOptions": {
+        "project": ["tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:prettier/recommended",
+        "plugin:rxjs/recommended"
+      ],
+      "env": {
+        "browser": true
+      },
+      "rules": {
+        "prettier/prettier": ["off", { "parser": "angular" }],
+        "deprecation/deprecation": "warn",
+        "spaced-comment": ["warn", "always"],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "app",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "app",
+            "style": "kebab-case"
+          }
+        ],
+        "no-unused-vars": "off",
+        "no-console": "warn",
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/array-type": ["warn", { "default": "array" }],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/member-ordering": "warn",
+        "@typescript-eslint/explicit-member-accessibility": ["warn", { "accessibility": "no-public" }],
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
+        "rxjs/no-implicit-any-catch": "off"
+      }
+    },
+    {
+      "files": ["*.spec.ts"],
+      "plugins": ["jasmine"],
+      "extends": ["plugin:jasmine/recommended"],
+      "rules": {
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-empty-function": "off"
+      },
+      "env": {
+        "jasmine": true
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {}
+    },
+    {
+      "files": ["*.html"],
+      "excludedFiles": ["*inline-template-*.component.html"],
+      "extends": ["plugin:prettier/recommended"],
+      "rules": {
+        "prettier/prettier": ["off", { "parser": "angular" }]
+      }
+    }
+  ]
+}
