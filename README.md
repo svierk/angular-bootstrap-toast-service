@@ -2,6 +2,14 @@
 
 The idea of the project is to create a service that allows displaying different toast notifications to the user, e.g. success or error toasts.
 
+## Getting started
+
+Open the repository with VS Code and install all recommended extensions.
+
+Run
+
+- `npm install` to install all required dependencies
+
 ## Development Server
 
 Run
