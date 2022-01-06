@@ -3,6 +3,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.rulers": [120],
+  "editor.bracketPairColorization.enabled": true,
   "redhat.telemetry.enabled": false,
   "files.associations": {
     "*.json": "jsonc",
