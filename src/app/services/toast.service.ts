@@ -18,6 +18,11 @@ export class ToastService {
     this.toastEvents = this._toastEvents.asObservable();
   }
 
+  /**
+   * Show success toast notification.
+   * @param title Toast title
+   * @param message Toast message
+   */
   showSuccessToast(title: string, message: string) {
     this._toastEvents.next({
       message,
@@ -26,6 +31,11 @@ export class ToastService {
     });
   }
 
+  /**
+   * Show info toast notification.
+   * @param title Toast title
+   * @param message Toast message
+   */
   showInfoToast(title: string, message: string) {
     this._toastEvents.next({
       message,
@@ -34,6 +44,11 @@ export class ToastService {
     });
   }
 
+  /**
+   * Show warning toast notification.
+   * @param title Toast title
+   * @param message Toast message
+   */
   showWarningToast(title: string, message: string) {
     this._toastEvents.next({
       message,
@@ -42,6 +57,11 @@ export class ToastService {
     });
   }
 
+  /**
+   * Show error toast notification.
+   * @param title Toast title
+   * @param message Toast message
+   */
   showErrorToast(title: string, message: string) {
     this._toastEvents.next({
       message,
