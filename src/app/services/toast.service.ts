@@ -1,11 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-
-export interface ToastEvent {
-  type: 'success' | 'info' | 'warning' | 'error';
-  title: string;
-  message: string;
-}
+import { ToastEvent } from '../models/toast-event';
 
 @Injectable({
   providedIn: 'root',
