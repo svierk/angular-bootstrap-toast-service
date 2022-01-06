@@ -1,0 +1,9 @@
+<div #toastElement class="toast fade toast-width mt-2" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="toast-header">
+    <strong class="me-auto">{{ title }}</strong>
+    <button type="button" class="btn btn-close p-0" aria-label="Close" (click)="hide()">
+      <span class="material-icons">close</span>
+    </button>
+  </div>
+  <div class="toast-body">{{ message }}</div>
+</div>
