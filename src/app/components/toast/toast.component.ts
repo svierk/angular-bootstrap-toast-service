@@ -31,15 +31,16 @@ export class ToastComponent implements OnInit {
   }
 
   show() {
-    if (this.type === EventTypes.Error) {
-      this.toast = new Toast(this.toastEl.nativeElement, {
-        autohide: false,
-      });
-    } else {
-      this.toast = new Toast(this.toastEl.nativeElement, {
-        delay: 5000,
-      });
-    }
+    this.toast = new Toast(
+      this.toastEl.nativeElement,
+      this.type === EventTypes.Error
+        ? {
+            autohide: false,
+          }
+        : {
+            delay: 5000,
+          }
+    );
 
     fromEvent(this.toastEl.nativeElement, 'hidden.bs.toast')
       .pipe(take(1))
