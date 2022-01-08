@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { EventTypes } from '../models/event-types';
 import { ToastEvent } from '../models/toast-event';
 
 @Injectable({
@@ -22,7 +23,7 @@ export class ToastService {
     this._toastEvents.next({
       message,
       title,
-      type: 'success',
+      type: EventTypes.Success,
     });
   }
 
@@ -35,7 +36,7 @@ export class ToastService {
     this._toastEvents.next({
       message,
       title,
-      type: 'info',
+      type: EventTypes.Info,
     });
   }
 
@@ -48,7 +49,7 @@ export class ToastService {
     this._toastEvents.next({
       message,
       title,
-      type: 'warning',
+      type: EventTypes.Warning,
     });
   }
 
@@ -61,7 +62,7 @@ export class ToastService {
     this._toastEvents.next({
       message,
       title,
-      type: 'error',
+      type: EventTypes.Error,
     });
   }
 }

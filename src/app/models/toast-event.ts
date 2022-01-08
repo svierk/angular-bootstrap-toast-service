@@ -1,5 +1,7 @@
+import { EventTypes } from './event-types';
+
 export interface ToastEvent {
-  type: 'success' | 'info' | 'warning' | 'error';
+  type: EventTypes;
   title: string;
   message: string;
 }
