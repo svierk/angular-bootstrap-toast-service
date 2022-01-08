@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastService } from './services/toast.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-bootstrap-toast-service';
+
+  constructor(private toastService: ToastService) {}
+
+  showToast() {
+    this.toastService.showSuccessToast('Hello', 'World');
+  }
 }
