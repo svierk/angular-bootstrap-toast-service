@@ -103,6 +103,23 @@ svg.material-icons {
   &.card-small {
     height: 16px;
     width: 168px;
+    color: white;
+
+    &.success {
+      background-color: #198754;
+    }
+
+    &.info {
+      background-color: #0d6efd;
+    }
+
+    &.warning {
+      background-color: #ffc107;
+    }
+
+    &.error {
+      background-color: #dc3545;
+    }
   }
 
   &.highlight-card {
@@ -206,6 +223,10 @@ svg#clouds {
   left: -230px;
   z-index: -10;
   width: 1920px;
+}
+
+span.material-icons {
+  width: 30px;
 }
 
 /* Responsive Styles */

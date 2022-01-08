@@ -56,9 +56,24 @@
   <p>Here are some available toast notifications:</p>
 
   <div class="card-container">
-    <button class="card card-small" (click)="showToast()">
-      <!-- place mat icon -->
-      <span>Show Basic Toast</span>
+    <button class="card card-small success" (click)="showToast(EventTypes.Success)">
+      <span class="material-icons">checkmark</span>
+      <span>Show Success</span>
+    </button>
+
+    <button class="card card-small info" (click)="showToast(EventTypes.Info)">
+      <span class="material-icons">info</span>
+      <span>Show Info</span>
+    </button>
+
+    <button class="card card-small warning" (click)="showToast(EventTypes.Warning)">
+      <span class="material-icons">warning</span>
+      <span>Show Warning</span>
+    </button>
+
+    <button class="card card-small error" (click)="showToast(EventTypes.Error)">
+      <span class="material-icons">error_outline</span>
+      <span>Show Error</span>
     </button>
   </div>
 

@@ -9,3 +9,9 @@
 @import '~bootstrap/scss/_toasts';
 @import '~bootstrap/scss/_buttons';
 @import '~bootstrap/scss/utilities/_api';
+
+$toast-header-background-color: rgba($white, 0.5);
+$toast-color: $white;
+$toast-header-color: #333;
+
+@import 'bootstrap/scss/bootstrap';
