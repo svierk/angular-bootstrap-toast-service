@@ -19,9 +19,6 @@ export class AppComponent {
       case EventTypes.Success:
         this.toastService.showSuccessToast('Success toast title', 'This is a success toast message.');
         break;
-      case EventTypes.Info:
-        this.toastService.showInfoToast('Info toast title', 'This is an info toast message.');
-        break;
       case EventTypes.Warning:
         this.toastService.showWarningToast('Warning toast title', 'This is a warning toast message.');
         break;
@@ -29,6 +26,7 @@ export class AppComponent {
         this.toastService.showErrorToast('Error toast title', 'This is an error toast message.');
         break;
       default:
+        this.toastService.showInfoToast('Info toast title', 'This is an info toast message.');
         break;
     }
   }
