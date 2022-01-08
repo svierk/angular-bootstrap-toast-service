@@ -1,11 +1,6 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { Toast } from 'src/app/models/toast';
 import { ToastService } from 'src/app/services/toast.service';
-
-export interface Toast {
-  type: 'success' | 'info' | 'warning' | 'error';
-  title: string;
-  message: string;
-}
 
 @Component({
   selector: 'app-toaster',
