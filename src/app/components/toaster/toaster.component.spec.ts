@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { EventTypes } from 'src/app/models/event-types';
 import { ToasterComponent } from './toaster.component';
 
 describe('ToasterComponent', () => {
@@ -8,9 +8,8 @@ describe('ToasterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ToasterComponent ]
-    })
-    .compileComponents();
+      declarations: [ToasterComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -19,7 +18,20 @@ describe('ToasterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should remove toasts on dispose', () => {
+    // given
+    component.currentToasts = [
+      {
+        type: EventTypes.Info,
+        title: 'info',
+        message: 'info',
+      },
+    ];
+
+    // when
+    component.dispose(0);
+
+    // then
+    expect(component.currentToasts).toEqual([]);
   });
 });

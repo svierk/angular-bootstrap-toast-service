@@ -20,10 +20,6 @@ describe('ToastComponent', () => {
     debugElement = fixture.debugElement;
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
   it('should create an error toast that does not disappear', () => {
     // given
     component.type = EventTypes.Error;
