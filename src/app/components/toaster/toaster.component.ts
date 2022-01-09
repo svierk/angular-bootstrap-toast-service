@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { Toast } from 'src/app/models/toast';
+import { ToastEvent } from 'src/app/models/toast-event';
 import { ToastService } from 'src/app/services/toast.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { ToastService } from 'src/app/services/toast.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ToasterComponent implements OnInit {
-  currentToasts: Toast[] = [];
+  currentToasts: ToastEvent[] = [];
 
   constructor(private toastService: ToastService, private cdr: ChangeDetectorRef) {}
 
@@ -19,7 +19,7 @@ export class ToasterComponent implements OnInit {
 
   subscribeToToasts() {
     this.toastService.toastEvents.subscribe((toasts) => {
-      const currentToast: Toast = {
+      const currentToast: ToastEvent = {
         type: toasts.type,
         title: toasts.title,
         message: toasts.message,
