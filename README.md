@@ -6,7 +6,7 @@ The application consists of essentially three components: A toast component that
 
 ## Getting started
 
-Open the repository with VS Code and install all recommended extensions.
+To get the toast service up and runnning, all you need to do is opening the repository with VS Code and installing all recommended extensions.
 
 Run
 
