@@ -6,7 +6,7 @@ The application consists of essentially three components: A toast component that
 
 ## Getting started
 
-To check out the toast application, there is a live version deployed on Heroku:
+To check out the toast application, there is a live version deployed on Heroku:  
 https://ng-bootstrap-toast-service.herokuapp.com/
 
 To get the toast service up and runnning locally, all you need to do is open the repository with VS Code and install all the recommended extensions.
