@@ -1,6 +1,8 @@
 # 🍞 Angular 13 Toast Service with Bootstrap 5
 
-The idea of the project is to create a service that allows displaying different toast notifications to the user, e.g. success or error toasts.
+The idea of the project was to create a service that allows displaying different types of toast notifications to the user, e.g. success or error toasts.
+
+The application consists of essentially three components: A toast component that represents a single toast notification, a toaster component that maintains and stacks all current toasts, and the toast service.
 
 ## Getting started
 
