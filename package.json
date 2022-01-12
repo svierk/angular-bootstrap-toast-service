@@ -1,6 +1,11 @@
 {
   "name": "angular-bootstrap-toast-service",
   "version": "0.0.0",
+  "author": {
+    "name": "Sebastiano Vierk",
+    "url": "https://github.com/svierk"
+  },
+  "license": "MIT",
   "engines": {
     "node": "14.18.1",
     "npm": "6.14.15"
