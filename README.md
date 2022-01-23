@@ -19,7 +19,7 @@ Run
 
 Run
 
-- `npm start` for a dev server. Navigate to `http://localhost:4200/`.
+- `npm run start:dev` for a local dev server. Navigate to `http://localhost:4200/`.
 
 ## Linter and Prettier
 
