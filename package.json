@@ -28,13 +28,13 @@
   "lint-staged": {
     "src/**/*.{ts,scss,html}": [
       "npm run prettier",
-      "npm run lint"
+      "npm run lint",
+      "npm run test:once"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm run test:once"
+      "pre-commit": "lint-staged"
     }
   },
   "private": true,
