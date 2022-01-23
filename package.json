@@ -23,7 +23,9 @@
     "lint:fix": "ng lint --fix",
     "prettier": "prettier \"**/*.(ts|scss|html|js|json)\" --check",
     "prettier:fix": "prettier \"**/*.(ts|scss|html|js|json)\" --write",
-    "heroku-postbuild": "ng build"
+    "heroku-postbuild": "ng build",
+    "postinstall": "husky install",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "src/**/*.{ts,scss,html}": [
@@ -31,11 +33,6 @@
       "npm run lint",
       "npm run test:once"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "private": true,
   "dependencies": {
