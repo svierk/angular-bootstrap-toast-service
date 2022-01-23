@@ -28,8 +28,7 @@
   },
   "lint-staged": {
     "src/**/*.{ts,scss,html}": [
-      "npm run prettier",
-      "npm run test:once"
+      "npm run prettier"
     ]
   },
   "private": true,
