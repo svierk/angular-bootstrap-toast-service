@@ -28,7 +28,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{ts,scss,html}": [
+    "**/src/**": [
       "npm run prettier",
       "npm run lint",
       "npm run test:once"
