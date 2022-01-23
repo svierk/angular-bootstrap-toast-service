@@ -24,13 +24,11 @@
     "prettier": "prettier \"**/*.(ts|scss|html|js|json)\" --check",
     "prettier:fix": "prettier \"**/*.(ts|scss|html|js|json)\" --write",
     "heroku-postbuild": "ng build",
-    "postinstall": "husky install",
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "**/src/**": [
+    "src/**/*.{ts,scss,html}": [
       "npm run prettier",
-      "ng lint --max-warnings 0",
       "npm run test:once"
     ]
   },
