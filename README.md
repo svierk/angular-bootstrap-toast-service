@@ -24,6 +24,12 @@ Run
 
 - `npm install` to install all required dependencies
 
+## Deployment
+
+If you want to host the app yourself, you can deploy it on Heroku:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Development Server
 
 Run

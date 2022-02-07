@@ -1,0 +1,6 @@
+{
+  "name": "Angular Bootstrap Toast Service",
+  "description": "Service that allows displaying different types of toast notifications to the user",
+  "repository": "https://github.com/svierk/angular-bootstrap-toast-service",
+  "keywords": ["angular", "bootstrap", "express"]
+}
