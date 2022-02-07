@@ -1,5 +1,14 @@
 # 🍞 Angular 13 Toast Service with Bootstrap 5
 
+![GitHub](https://img.shields.io:/github/license/svierk/angular-bootstrap-toast-service)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)
+![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?logo=reactivex&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?logo=bootstrap&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?logo=heroku&logoColor=white)
+
+## About the project
+
 The idea of the project was to create a service that allows displaying different types of toast notifications to the user, e.g. success or error toasts.
 
 The application consists of essentially three components: A toast component that represents a single toast notification, a toaster component that maintains and stacks all current toasts, and the toast service.
