@@ -2,6 +2,7 @@
 
 ![GitHub License](https://img.shields.io:/github/license/svierk/angular-bootstrap-toast-service)
 ![GitHub CI](https://github.com/svierk/angular-bootstrap-toast-service/actions/workflows/ci.yaml/badge.svg)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=svierk_angular-bootstrap-toast-service&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=svierk_angular-bootstrap-toast-service)
 
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?logo=angular&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)
