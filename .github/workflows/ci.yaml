@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/add-node-ci-pipeline]
   pull_request:
     branches: [main]
 
