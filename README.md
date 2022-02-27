@@ -1,6 +1,6 @@
 # 🍞 Angular 13 Toast Service with Bootstrap 5
 
-![GitHub](https://img.shields.io:/github/license/svierk/angular-bootstrap-toast-service)
+![GitHub License](https://img.shields.io:/github/license/svierk/angular-bootstrap-toast-service)
 ![GitHub CI](https://github.com/svierk/angular-bootstrap-toast-service/actions/workflows/ci.yaml/badge.svg)
 
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?logo=angular&logoColor=white)

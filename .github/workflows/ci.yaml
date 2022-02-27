@@ -1,4 +1,4 @@
-name: Node.js CI
+name: CI (Test / Build)
 
 on:
   push:
@@ -16,13 +16,25 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci
-      - run: npm run prettier
-      - run: npm run lint
-      - run: npm run test:ci
-      - run: npm run build
+      - name: Run npm clean-install
+        run: npm ci
+      - name: Check Prettier
+        run: npm run prettier
+      - name: Check ESLint
+        run: npm run lint
+      - name: Unit Tests
+        run: npm run test:ci
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: Build
+        run: npm run build
