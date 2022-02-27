@@ -41,5 +41,18 @@ module.exports = function (config) {
     browsers: ['Chrome'],
     singleRun: false,
     restartOnFileChange: true,
+    customLaunchers: {
+      CIChromeHeadless: {
+        base: 'ChromeHeadless',
+        flags: [
+          '--headless',
+          '--disable-gpu',
+          '--no-sandbox',
+          '--disable-web-security',
+          '--disable-translate',
+          '--disable-extensions',
+        ],
+      },
+    },
   });
 };
