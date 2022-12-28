@@ -8,7 +8,7 @@
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)
 ![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?logo=reactivex&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?logo=bootstrap&logoColor=white)
-![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?logo=heroku&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%234300.svg?logo=vercel&logoColor=white)
 
 ## About the project
 
@@ -18,26 +18,17 @@ The application consists of essentially three components: A toast component that
 
 ## Getting started
 
-To check out the toast application, there is a live version deployed on Heroku:  
-https://angular-toast-service.herokuapp.com/
-
 To get the toast service up and runnning locally, all you need to do is open the repository with VS Code and install all the recommended extensions.
 
 Run
 
 - `npm install` to install all required dependencies
 
-## Deployment
-
-If you want to host the app yourself, you can deploy it on Heroku:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 ## Development Server
 
 Run
 
-- `npm run start:dev` for a local dev server. Navigate to `http://localhost:4200/`.
+- `npm start` for a local dev server. Navigate to `http://localhost:4200/`.
 
 ## Linter and Prettier
 
