@@ -1,8 +1,9 @@
 {
   "builds": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
+      "src": "dist/angular-bootstrap-toast-service",
+      "use": "@vercel/static",
+      "config": { "includeFiles": ["dist/angular-bootstrap-toast-service"] }
     }
   ],
   "routes": [
