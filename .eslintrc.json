@@ -12,7 +12,7 @@
     },
     {
       "files": ["*.ts"],
-      "plugins": ["deprecation", "rxjs"],
+      "plugins": ["rxjs"],
       "parserOptions": {
         "project": ["tsconfig.json"],
         "createDefaultProgram": true
@@ -31,7 +31,6 @@
       },
       "rules": {
         "prettier/prettier": ["off", { "parser": "angular" }],
-        "deprecation/deprecation": "warn",
         "spaced-comment": ["warn", "always"],
         "@angular-eslint/directive-selector": [
           "error",
