@@ -1,6 +1,9 @@
 @import 'bootstrap/scss/_functions';
 @import 'bootstrap/scss/_variables';
 @import 'bootstrap/scss/_mixins';
+
+$enable-dark-mode: false;
+
 @import 'bootstrap/scss/maps';
 @import 'bootstrap/scss/_utilities';
 @import 'bootstrap/scss/_root';
