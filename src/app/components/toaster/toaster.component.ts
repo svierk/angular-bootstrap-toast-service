@@ -11,7 +11,10 @@ import { ToastService } from 'src/app/services/toast.service';
 export class ToasterComponent implements OnInit {
   currentToasts: ToastEvent[] = [];
 
-  constructor(private toastService: ToastService, private cdr: ChangeDetectorRef) {}
+  constructor(
+    private toastService: ToastService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
     this.subscribeToToasts();
