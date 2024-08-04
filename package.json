@@ -24,8 +24,8 @@
     "prettier": "prettier \"**/*.(ts|scss|html|js|json)\" --check",
     "prettier:fix": "prettier \"**/*.(ts|scss|html|js|json)\" --write",
     "heroku-postbuild": "ng build",
-    "postinstall": "husky install",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "prepare": "husky"
   },
   "lint-staged": {
     "src/**/*.{ts,scss,html}": [
