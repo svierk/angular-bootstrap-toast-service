@@ -12,8 +12,8 @@ export class ToasterComponent implements OnInit {
   currentToasts: ToastEvent[] = [];
 
   constructor(
-    private toastService: ToastService,
-    private cdr: ChangeDetectorRef
+    readonly toastService: ToastService,
+    readonly cdr: ChangeDetectorRef
   ) {}
 
   ngOnInit() {

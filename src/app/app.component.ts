@@ -12,7 +12,7 @@ export class AppComponent {
 
   EventTypes = EventTypes;
 
-  constructor(private toastService: ToastService) {}
+  constructor(readonly toastService: ToastService) {}
 
   showToast(type: EventTypes) {
     switch (type) {

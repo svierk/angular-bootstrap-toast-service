@@ -8,7 +8,7 @@ import { ToastEvent } from '../models/toast-event';
 })
 export class ToastService {
   toastEvents: Observable<ToastEvent>;
-  private _toastEvents = new Subject<ToastEvent>();
+  readonly _toastEvents = new Subject<ToastEvent>();
 
   constructor() {
     this.toastEvents = this._toastEvents.asObservable();
