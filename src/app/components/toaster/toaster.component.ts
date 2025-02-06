@@ -7,6 +7,7 @@ import { ToastService } from 'src/app/services/toast.service';
   templateUrl: './toaster.component.html',
   styleUrls: ['./toaster.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: false,
 })
 export class ToasterComponent implements OnInit {
   currentToasts: ToastEvent[] = [];

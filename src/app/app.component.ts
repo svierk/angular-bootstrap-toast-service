@@ -6,6 +6,7 @@ import { ToastService } from './services/toast.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: false,
 })
 export class AppComponent {
   title = 'angular-bootstrap-toast-service';
