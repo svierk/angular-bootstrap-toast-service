@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { EventTypes } from './models/event-types';
 import { ToastService } from './services/toast.service';
 
@@ -9,11 +9,13 @@ import { ToastService } from './services/toast.service';
   standalone: false,
 })
 export class AppComponent {
+  readonly toastService = inject(ToastService);
+
   title = 'angular-bootstrap-toast-service';
 
   EventTypes = EventTypes;
 
-  constructor(readonly toastService: ToastService) {}
+  constructor() {}
 
   showToast(type: EventTypes) {
     switch (type) {

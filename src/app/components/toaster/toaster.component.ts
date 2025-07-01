@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit, inject } from '@angular/core';
 import { ToastEvent } from 'src/app/models/toast-event';
 import { ToastService } from 'src/app/services/toast.service';
 
@@ -10,12 +10,12 @@ import { ToastService } from 'src/app/services/toast.service';
   standalone: false,
 })
 export class ToasterComponent implements OnInit {
+  readonly toastService = inject(ToastService);
+  readonly cdr = inject(ChangeDetectorRef);
+
   currentToasts: ToastEvent[] = [];
 
-  constructor(
-    readonly toastService: ToastService,
-    readonly cdr: ChangeDetectorRef
-  ) {}
+  constructor() {}
 
   ngOnInit() {
     this.subscribeToToasts();
