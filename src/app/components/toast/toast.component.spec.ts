@@ -1,4 +1,4 @@
-import { DebugElement } from '@angular/core';
+import { DebugElement, ElementRef } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { EventTypes } from 'src/app/models/event-types';
 import { ToastComponent } from './toast.component';
@@ -52,5 +52,24 @@ describe('ToastComponent', () => {
     // then
     expect(component.disposeEvent.emit).toHaveBeenCalledTimes(1);
     expect(component.toast.dispose).toHaveBeenCalledTimes(1);
+  });
+
+  it('should subscribe to hidden.bs.toast event and call hide()', (done) => {
+    // given
+    component.type = EventTypes.Info;
+    const element = document.createElement('div');
+    component.toastEl = new ElementRef(element);
+    spyOn(component, 'hide');
+
+    // when
+    component.show();
+    const event = new Event('hidden.bs.toast');
+    element.dispatchEvent(event);
+
+    // then
+    setTimeout(() => {
+      expect(component.hide).toHaveBeenCalledTimes(1);
+      done();
+    }, 100);
   });
 });
