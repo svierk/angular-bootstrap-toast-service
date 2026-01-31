@@ -3,12 +3,13 @@ import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild }
 import { Toast } from 'bootstrap';
 import { fromEvent, take } from 'rxjs';
 import { EventTypes } from 'src/app/models/event-types';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-toast',
   templateUrl: './toast.component.html',
   styleUrls: ['./toast.component.scss'],
-  standalone: false,
+  imports: [NgClass],
 })
 export class ToastComponent implements OnInit {
   @Output() disposeEvent = new EventEmitter();
