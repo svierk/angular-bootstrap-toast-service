@@ -21,8 +21,8 @@
     "test:ci": "ng test --browsers CIChromeHeadless --watch=false --code-coverage",
     "lint": "ng lint --max-warnings 0",
     "lint:fix": "ng lint --fix",
-    "prettier": "prettier \"**/*.(ts|scss|html|js|json)\" --check",
-    "prettier:fix": "prettier \"**/*.(ts|scss|html|js|json)\" --write",
+    "prettier": "prettier \"**/*.(ts|scss|html|js|json|yaml|yml)\" --check",
+    "prettier:fix": "prettier \"**/*.(ts|scss|html|js|json|yaml|yml)\" --write",
     "heroku-postbuild": "ng build",
     "precommit": "lint-staged; npm run lint",
     "prepare": "husky"
