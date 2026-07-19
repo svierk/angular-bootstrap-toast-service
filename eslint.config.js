@@ -45,6 +45,10 @@ module.exports = tseslint.config(
         },
       ],
       '@angular-eslint/prefer-standalone': 'off',
+      // Angular 22 defaults components to OnPush; the core migration added
+      // ChangeDetectionStrategy.Eager to preserve pre-v22 behavior. Keep that
+      // behavior-neutral and opt out of the new stylistic OnPush rule for now.
+      '@angular-eslint/prefer-on-push-component-change-detection': 'off',
       'no-unused-vars': 'off',
       'no-console': 'warn',
       '@typescript-eslint/no-unused-vars': ['warn'],

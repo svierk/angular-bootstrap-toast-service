@@ -1,5 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
-import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { Toast } from 'bootstrap';
 import { fromEvent, take } from 'rxjs';
 import { EventTypes } from 'src/app/models/event-types';
@@ -9,6 +18,7 @@ import { NgClass } from '@angular/common';
   selector: 'app-toast',
   templateUrl: './toast.component.html',
   styleUrls: ['./toast.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [NgClass],
 })
 export class ToastComponent implements OnInit {

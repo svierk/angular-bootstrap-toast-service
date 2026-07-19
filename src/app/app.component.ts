@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { EventTypes } from './models/event-types';
 import { ToastService } from './services/toast.service';
 import { ToasterComponent } from './components/toaster/toaster.component';
@@ -8,6 +8,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [ToasterComponent, RouterOutlet],
 })
 export class AppComponent {
