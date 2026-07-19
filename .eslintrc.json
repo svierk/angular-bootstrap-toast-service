@@ -12,7 +12,7 @@
     },
     {
       "files": ["*.ts"],
-      "plugins": ["rxjs"],
+      "plugins": ["rxjs-x"],
       "parserOptions": {
         "project": ["tsconfig.json"],
         "createDefaultProgram": true
@@ -24,7 +24,7 @@
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates",
         "plugin:prettier/recommended",
-        "plugin:rxjs/recommended"
+        "plugin:rxjs-x/recommended-legacy"
       ],
       "env": {
         "browser": true
@@ -60,7 +60,7 @@
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
-        "rxjs/no-implicit-any-catch": "off"
+        "rxjs-x/no-implicit-any-catch": "off"
       }
     },
     {
