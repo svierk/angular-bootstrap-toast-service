@@ -1,6 +1,6 @@
 # 🍞 Angular Toast Service with Bootstrap
 
-![GitHub CI](https://github.com/svierk/angular-bootstrap-toast-service/actions/workflows/ci.yml/badge.svg)
+[![Validation](https://github.com/svierk/angular-bootstrap-toast-service/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/svierk/angular-bootstrap-toast-service/actions/workflows/ci.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=svierk_angular-bootstrap-toast-service&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=svierk_angular-bootstrap-toast-service)
 [![codecov](https://codecov.io/gh/svierk/angular-bootstrap-toast-service/branch/main/graph/badge.svg?token=WWLC0MVTI8)](https://codecov.io/gh/svierk/angular-bootstrap-toast-service)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsvierk%2Fangular-bootstrap-toast-service.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsvierk%2Fangular-bootstrap-toast-service?ref=badge_shield)
