@@ -61,7 +61,7 @@ jobs:
       # there instead of failing; the analysis then runs on the push to `main`.
       - name: SonarCloud Scan
         if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-        uses: SonarSource/sonarqube-scan-action@v8.2.2
+        uses: SonarSource/sonarqube-scan-action@v8.3.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
