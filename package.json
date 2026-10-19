@@ -34,7 +34,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^22.0.7",
+    "@angular/animations": "^22.2.0",
     "@angular/cdk": "^22.2.0",
     "@angular/common": "^22.2.0",
     "@angular/compiler": "^22.2.0",
@@ -42,7 +42,7 @@
     "@angular/forms": "^22.2.0",
     "@angular/material": "^22.2.0",
     "@angular/platform-browser": "^22.2.0",
-    "@angular/platform-browser-dynamic": "^22.0.7",
+    "@angular/platform-browser-dynamic": "^22.2.0",
     "@angular/router": "^22.2.0",
     "bootstrap": "^5.3.8",
     "rxjs": "~7.8.2",
@@ -74,7 +74,7 @@
     "karma-junit-reporter": "^2.0.1",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.9",
-    "typescript": "~7.0.2",
+    "typescript": "~6.0.3",
     "typescript-eslint": "^8.70.1"
   }
 }
