@@ -94,7 +94,9 @@ svg.material-icons {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s ease-in-out;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
   line-height: 24px;
 
   & svg.material-icons path {
